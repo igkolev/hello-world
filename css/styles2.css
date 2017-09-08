@@ -1,0 +1,497 @@
+* { margin:0;
+padding:0;}
+.clear {
+	clear:both;
+}
+.wrapper {
+	width:1170px;
+	margin:0 auto;
+}
+
+
+/*Header*/
+.page__header {
+position: relative;
+width:100%;
+background-color: #76c7c0;
+background-image:url("../imgs/ruler2.png");
+background-position:bottom left;
+background-repeat: repeat-x;
+}
+.page__header_headings {
+	float:left;
+	color:white;
+	line-height: 80px;
+}
+.page__header_headings h1 {
+	float:left;
+	transition: color 0.2s;
+	}
+.page__header_headings h2 {
+	display: inline-block;
+	padding:2px 0 0 3px;
+	font-weight:normal;
+	color:grey;
+	transition: color 0.2s;
+}
+.page__header_headings:hover h1 {
+	color:grey;
+}
+.page__header_headings:hover h2 {
+	color:white;
+}
+.page__header_menu {
+	float:right;
+	margin-top:30px;	
+	
+}
+
+.page__header_menu li {
+	list-style:none;
+	display:inline;
+
+}
+.page__header_menu li a{
+	color:white;
+	text-decoration:none;
+	text-transform:uppercase;
+	line-height: 33px;
+	font-size:13px;
+	font-weight: bold;
+	padding:0 20px 0 30px;
+	display: inline-block;
+	position: relative;
+	border-radius:15px;
+	transition: background-color 0.1s ease, border-radius 0.0s ease;
+}
+.page__header_menu li span {
+		display: inline-block;
+
+}
+.page__header_menu li a div {
+		display: inline;
+		position: absolute;
+		left:11%;
+		opacity: 0;
+		transition: opacity 0.1s ease;
+}
+
+.page__header_menu li img {
+	display: block;
+	position: absolute;
+	right:8px;
+	bottom:7px;
+}
+
+.page__header_menu li a:hover {
+	background-color: #62a29e;
+	border-radius:15px;
+	border-bottom: 3px solid #528b86;
+
+}
+.page__header_menu li a:hover div {
+	opacity: 1;
+}
+.page__header_hamburgerMenu {
+	margin-top: 80px;
+	display: inline-block;
+	position: absolute;
+	top:0;
+	right:0;
+	display: none;
+}
+.revealHamburgerMenu {
+	display: inline-block;
+}
+.page__header_hamburgerMenu li {
+list-style:none;
+}
+.page__header_hamburgerMenu li a {
+	font-size:19px;
+	display: block;
+	padding:15px 15px 35px 100px;
+	color:white;background:  #62a29e;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 150px;
+
+}
+.page__header_hamburgerMenu li span {
+	float: right;
+}
+.page__header_hamburgerMenu li a:hover {
+	background:grey;
+}
+.page__header_hamburgerButton {
+	float: right;
+	margin:10px;
+	display: block;
+	display: none;
+}
+.hamburgerLine {
+	display: block;
+	content: "";
+	width:55px;
+	height:6px;
+	background-color: white;
+	margin:10px;
+	transition: all 0.2s ease;
+}
+.change.hamburgerLine1 {
+	transform: translate(0px, 15px) rotate(45deg);
+}
+.change.hamburgerLine2 {
+	opacity: 0;
+}
+.change.hamburgerLine3 {
+	transform: translate(0px, -17px) rotate(-45deg);
+}
+/*End of Header*/
+
+/*About Us*/
+.page__aboutUs {
+	height: 80px;
+	background-color:#ececec;
+	color:#7f8c8c;
+}
+.page__aboutUs_heading {
+	line-height: 80px;
+	float:left;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.page__aboutUs_nav {
+	float:right;
+	line-height: 80px;
+
+}
+.page__aboutUs_nav a {
+		text-decoration: none;
+}
+.page__aboutUs_nav a:first-of-type:after {
+	content: "\002F";
+	display: inline;
+	padding:0 5px 0 10px;
+	cursor: default;
+}
+.page__aboutUs_nav a:hover {
+	color:red;
+}
+/*End of About Us*/
+
+/*Main Section*/
+.page__main_first-section {
+	width:100%;
+	padding: 60px 0 60px 0;
+}
+.page__main_first-section h1 {
+	color:red;
+	margin-bottom:10px;
+}
+.page__main_first-section p {
+	color:red;
+	color:#7f8c8c;
+}
+.page__main_column-left ul li:before {
+content: "\279C \0020";
+color:red;
+}
+.page__main_column-left {
+	width:25%;
+	float:left;
+	color:#7f8c8c;
+		padding-bottom:60px;
+}
+.page__main_column-left ul {
+	margin: 30px 0 0 0;
+	}
+.page__main_column-left ul li {
+	list-style:none;
+	font-size: 15px;	
+	line-height: 26px;
+	color:grey;
+}
+.page__main_column-right {
+	width: 25%;
+	color:#7f8c8c;
+	float:left;
+	padding-bottom:60px;
+}
+.page__main_column-right p {
+	width:240px;
+	padding: 30px 0 20px 15px;
+}
+.page__main_column-right h3:last-child {
+	text-indent: 45px;
+	font-style: italic;
+}
+.page__main_second-section {
+	width: 50%;
+	float:left;
+	padding-bottom:60px;
+}
+.page__main_second-section_text {
+	line-height: 27px;
+}
+.page__main_second-section_text a {
+	color:red;
+}
+.page__main_second-section_chart {
+position: relative;
+width:120px;
+color:#88837e;
+display: inline-block;
+margin: 60px 10px 0 10px;
+}
+.page__main_second-section_chart h1 {
+position: absolute;
+width:100%;
+text-align:center;
+top:44%;
+font-weight: bolder;
+}
+.page__main_second-section_chart h2 {
+width: 100%;
+margin-top: 10px;
+text-transform: uppercase;
+text-align:center;
+position: absolute;
+font-size: 17px;
+}
+/*End of Main Section*/
+
+.page__ourTeam {
+		background-color: #ececec;
+		height:400px;
+		background-image: url("../imgs/second-ruler.png");
+		background-repeat: repeat-x;
+		background-position: top;
+}
+.page__ourTeam h1 {
+	line-height: 175px;
+	text-align: center;
+	font-size: 43px;
+	color: #7f8c8c;
+	width: 100%;
+	text-transform: uppercase;
+}
+.page__ourTeam_image {
+	width: 270px;
+	height: 310px;
+	margin:0 15px 60px 15px;
+	background-color:white;
+	border-radius: 8px;
+	position:relative;
+	float:left;
+}
+.page__ourTeam .wrapper div:first-of-type {
+	margin-left:0;
+}
+.page__ourTeam .wrapper div:last-of-type {
+	margin-right:0;
+}
+.page__ourTeam_image a {
+	position: absolute;
+	display: block;
+	width: 200px;
+	height: 50px;
+	background-color: #98a3a3;
+	bottom:-27px;
+	left:13%;
+	color:white;
+	border-radius: 5px;
+	border-bottom: 4px solid  #7f8c8c;
+	text-decoration: none;
+	line-height: 55px;
+	text-align: center;
+		z-index: 0;
+}
+#specialBtn {
+	background-color: #e8645a;
+	border-bottom: 4px solid  #e2534b;
+}
+
+.page__ourTeam .wrapper div:nth-of-type(3) {
+	background-color: #90d1cb;
+}
+.page__ourTeam_image img {
+	position: absolute;
+	display: block;
+	text-align: center;
+	left: 39%;
+	top:35%;
+}
+.page__ourTeam_image_buttons {
+	position: absolute;
+	top:59%;
+	left:3.5%;
+	display: inline-block;
+}
+.page__ourTeam_image p {
+	width: 200px;
+	padding:35px;
+	color:white;
+}
+.page__ourTeam_image_buttons a {
+	width: 40px;
+	height: 40px;
+	border-bottom: none;
+	border-radius: 5px;
+	background-color: #81bcb6;
+	margin:5px;
+	float: left;
+	display: inline-block;	
+	position: relative;
+	z-index: 1;
+}
+.page {
+	background: lightcyan;
+}
+/*end of Our Team*/
+
+
+/*Final Section*/
+
+.page__finalSection {
+	height: 600px;
+}
+.page__finalSection_headings {
+	text-align: center;
+	padding:60px;
+	width: 100%;
+}
+.page__finalSection_headings h1 {
+	font-size:44px;
+	color: #e8645a;
+	margin-bottom: 10px;
+	font-weight:normal;
+}
+.page__finalSection_headings p {
+	font-size: 17px;
+	color:grey;
+	margin-bottom: 20px;
+}
+.page__finalSection_happyClients {
+	width: 100%;
+	margin:0 auto;
+}
+.page__finalSection_happyClients h6 {
+	font-size: 17px;
+	color:grey;
+	float:left;
+	min-width: 14.5%;
+	
+}
+.page__finalSection_happyClients-line {
+	display:inline-block;
+	margin-top: 10px;
+	width: 72%;
+	height: 2px;
+	background-color:grey;
+	float:left;
+}
+.page__finalSection_happyClients-buttons {
+	float: right;
+	min-width: 13%;
+	display: inline-block;
+	margin-top: -20px;
+	margin-left: 10px;
+}
+.page__finalSection_happyClients-buttons a {
+	width: 40px;
+	height:40px;
+	border-radius: 5px;
+	border-bottom: 4px solid  #7f8c8c;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	background: #98a3a3;
+	margin-right: 20px;
+}
+.page__finalSection_jqueryButtons {
+	margin-top: 30px;
+	width: 100%;
+}
+.page__finalSection_jqueryButtons img {
+	display: inline-block;
+	float: left;
+	margin:10px;
+}
+
+@media only screen and (max-width:1170px) {
+	.page__main_column-left,  .page__main_column-right{
+		min-width: 300px;
+		width: 350px;
+
+	}
+		.page__main_second-section {
+			width:100%;
+			float: none;
+
+		}
+	.wrapper {
+		width: 100%;
+	}
+	.page__main_first-section {
+		margin-left:30px;
+		width: 90%;
+}
+.page__header_headings, .page__aboutUs_heading {
+	margin-left:30px;
+}
+.page__aboutUs_nav {
+	margin-right: 30px;
+}
+	.page__main .wrapper2 {
+	max-width: 650px;
+	margin:0 auto;
+}
+	.page__header_menu {
+		width:520px;
+		line-height: 40px;
+		margin-top: 0px;
+	}
+	.page__ourTeam .wrapper {
+		max-width: 600px;
+	}
+	.page__ourTeam {
+		height:800px;
+	}
+	.page__ourTeam_image {
+		margin-left: 0;
+	}
+	.page__finalSection_happyClients-line {
+		max-width: 70%;
+		
+	}
+}
+@media only screen and (max-width:767px) {
+.page__header_menu {
+	display: none;
+}
+
+.page__main_second-section, .page__main_column-left,  .page__main_column-right {
+	width: 100%;
+	text-align: center;	margin: 0 auto;
+}
+.page__main_column-right p{
+	display: inline-block;
+	max-width: 260px;
+}
+.page__header_hamburgerButton {
+	display: block;
+}
+	.page__ourTeam {
+		height:1500px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.page__header_hamburgerMenu {
+		display: none;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.page__ourTeam .wrapper {
+		max-width: 300px;
+	}
+}
